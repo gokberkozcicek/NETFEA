@@ -11,13 +11,38 @@ namespace NETFEA
     /// </summary>
     public class Beam3EB:FeElement
     {
+        public double Length { get; set; }
         public override FeElementType ElementType { get; set; } = FeElementType.Beam3EB;
         // Constructors                                                                                                             
         public Beam3EB(int id, int[] nodeIds)
             : base(id, nodeIds)
         {
         }
-       
 
+        public override double[,] Ke()
+        {
+            double[,] ke = new double[12,12];
+            if (Material.MaterialType.Equals(MaterialType.Isotropic))
+            {
+                ke = IsotropicKe();
+            }
+            else if (Material.MaterialType.Equals(MaterialType.Orthotropic))
+            {
+                ke = OrthotropicKe();
+            }
+            else
+            {
+                ke = IsotropicKe();
+            }
+            return ke;
+        }
+        private double[,] IsotropicKe()
+        {
+            return new double[12, 12];
+        }
+        private double[,] OrthotropicKe()
+        {
+            return new double[12, 12];
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace NETFEA
         public double Iz { get; set; }
         public override SectionGroupType SectionGroupType { get; set; } = SectionGroupType.Beam;
         public override SectionType SectionType { get; set; } = SectionType.Generic;
+
     }
 }

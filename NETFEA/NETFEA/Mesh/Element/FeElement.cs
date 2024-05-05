@@ -20,6 +20,9 @@ namespace NETFEA
             Id = id;
             NodeIds = nodeIds;
         }
+        public abstract double[,] Ke();
+       
+
     }
     public enum FeElementType
     {
