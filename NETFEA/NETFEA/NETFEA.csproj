@@ -44,6 +44,7 @@
     <Compile Include="Material\FeMaterial.cs" />
     <Compile Include="Material\FeMaterialCollection.cs" />
     <Compile Include="Material\IsotropicMaterial.cs" />
+    <Compile Include="Material\OrthotropicMaterial.cs" />
     <Compile Include="Mesh\Element\Beam\Beam3EB.cs" />
     <Compile Include="Mesh\Element\FeElement.cs" />
     <Compile Include="Mesh\Element\FeElementCollection.cs" />

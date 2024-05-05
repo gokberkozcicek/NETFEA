@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace NETFEA
 {
+    /// <summary>
+    /// 3D Euler-Bernouilli Beam Element
+    /// </summary>
     public class Beam3EB:FeElement
     {
         public override FeElementType ElementType { get; set; } = FeElementType.Beam3EB;
