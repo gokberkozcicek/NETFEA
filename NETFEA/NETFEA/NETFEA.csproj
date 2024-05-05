@@ -58,6 +58,10 @@
     <Compile Include="Mesh\MeshData.cs" />
     <Compile Include="Mesh\Node\FeNode.cs" />
     <Compile Include="Mesh\Node\FeNodeCollection.cs" />
+    <Compile Include="Mesh\Section\Beam\BeamSection.cs" />
+    <Compile Include="Mesh\Section\Beam\CircularSolidSection.cs" />
+    <Compile Include="Mesh\Section\FeElementSection.cs" />
+    <Compile Include="Mesh\Section\FeElementSectionCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

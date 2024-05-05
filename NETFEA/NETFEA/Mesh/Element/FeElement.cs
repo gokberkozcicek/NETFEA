@@ -12,6 +12,7 @@ namespace NETFEA
         public int[] NodeIds { get; set; }
         public virtual FeElementType ElementType { get; set; }
         public FeMaterial Material { get; set; }
+        public FeElementSection Section { get; set; }
         //Constructors
         public FeElement() { }
         public FeElement(int id, int[] nodeIds)
