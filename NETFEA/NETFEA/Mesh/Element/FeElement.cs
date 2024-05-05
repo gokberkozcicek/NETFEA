@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathNet.Numerics.LinearAlgebra;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace NETFEA
             Id = id;
             NodeIds = nodeIds;
         }
-        public abstract double[,] Ke();
+        public abstract Matrix<double> Ke();
        
 
     }

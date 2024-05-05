@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathNet.Numerics.LinearAlgebra;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace NETFEA
         {
         }
 
-        public override double[,] Ke()
+        public override Matrix<double> Ke()
         {
             double[,] ke = new double[12,12];
             if (Material.MaterialType.Equals(MaterialType.Isotropic))
@@ -34,7 +35,8 @@ namespace NETFEA
             {
                 ke = IsotropicKe();
             }
-            return ke;
+            Matrix<double> stiffnessMatrix = Matrix<double>.Build.DenseOfArray(ke);
+            return stiffnessMatrix;
         }
         private double[,] IsotropicKe()
         {
