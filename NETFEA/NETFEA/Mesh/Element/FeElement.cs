@@ -10,11 +10,17 @@ namespace NETFEA
     {
         public int Id { get; set; }
         public int[] NodeIds { get; set; }
+        public virtual FeElementType ElementType { get; set; }
+        //Constructors
         public FeElement() { }
         public FeElement(int id, int[] nodeIds)
         {
             Id = id;
             NodeIds = nodeIds;
         }
+    }
+    public enum FeElementType
+    {
+        Beam3EB
     }
 }

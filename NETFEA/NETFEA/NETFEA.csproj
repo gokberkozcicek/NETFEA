@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mesh\Element\Beam\Beam3EB.cs" />
     <Compile Include="Mesh\Element\FeElement.cs" />
     <Compile Include="Mesh\Element\FeElementCollection.cs" />
     <Compile Include="FEA.cs" />
